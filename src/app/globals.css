@@ -1,5 +1,5 @@
 :root {
-  background-color: #181818;
+  background-color: black;
   color: rgba(255, 255, 255, 0.87);
   color-scheme: light dark;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -20,10 +20,6 @@
   }
 }
 
-body {
-  background: grey;
-}
-
 .html,
 .body {
   height: 100%;
@@ -33,48 +29,50 @@ body {
 
 .header {
   justify-content: center;
+  background-image: url("/images/6a22c367954e797a1b37063c81a150fa2c91ae559f2ca48447c3f2b7fb8fa06f085f12fed03b63266528f4bf8faa2cc32a50d9fac8f7ab26dd6e96_1280.jpg");
+  background-size: cover; /* Assicura che l'immagine copra completamente l'header */
+  background-position: center; /* Centra l'immagine di sfondo */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 100%; /* Usa l'intera larghezza disponibile */
-  background-color: #333; /* Grigio */
+  width: 75%;
+  background-color: #333;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed; /* Mantiene l'header in posizione fissa */
+  position: fixed;
   top: 20px;
-  z-index: 1000; /* Assicura che l'header sia sopra gli altri elementi */
-  border-radius: 50px; /* Oval shape */
+  z-index: 1000;
+  margin: 0 auto;
+  border-radius: 50px;
 }
 
 .header .logo {
-  /* Invece di usare flex-grow per spostarlo a destra, lo posizioniamo normalmente a sinistra */
-  display: flex;
-  justify-content: flex-start; /* Logo a sinistra */
+  margin-left: 1rem; /* Aggiunge margine a sinistra */
+  flex-grow: 0;
 }
 
 .header .navigation {
   display: flex;
   align-items: center;
-  gap: 1rem; /* Mantiene uno spazio tra i bottoni e l'hamburger menu */
+  gap: 1rem;
+  margin-right: 1rem; /* Aggiunge margine a destra */
 }
 
 .nav-button,
 .hamburger-menu {
   cursor: pointer;
   border: none;
-  background-color: #e0e0e0; /* Sfondo dei bottoni e menu */
+  background-color: #007bff;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: bold;
 }
 
-.hamburger-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem; /* Dimensione dell'icona del menu */
+.DeFiLogoPhoto {
+  width: 35%; /* O un'altra percentuale che funzioni per il tuo layout */
+  margin-right: 20px; /* Distanza tra l'immagine e il bottone */
 }
-
 .App {
   display: flex;
   flex-direction: column; /* Orientamento verticale dei figli */
@@ -85,16 +83,6 @@ body {
   box-sizing: border-box; /* Assicura che il padding non influenzi le dimensioni totali */
 }
 
-.body {
-  background-color: #ff0000; /* Grigio medio scuro */
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .content {
   display: flex;
   justify-content: center; /* Centra gli elementi orizzontalmente */
@@ -105,31 +93,26 @@ body {
   flex-direction: row; /* Elementi disposti in fila */
 }
 
-.main-image {
-  width: 80%; /* O un'altra percentuale che funzioni per il tuo layout */
-  margin-right: 20px; /* Distanza tra l'immagine e il bottone */
-}
-
-.connect-wallet {
-  padding: 10px 20px;
-  background-color: #grey; /* Colore di sfondo */
-  border: none; /* Rimuovi il bordo se presente */
-  border-radius: 5px; /* Bordo arrotondato */
-  cursor: pointer; /* Cambia il cursore in una mano quando si passa sopra */
-}
-
 .tab-headers {
   display: flex;
   justify-content: center; /* Centra i bottoni dei tab orizzontalmente */
   flex-wrap: wrap; /* Permette ai bottoni di andare a capo se non c'è spazio */
   width: 100%; /* Imposta la larghezza al 75% del contenitore padre */
-  background-color: #e9e9e9; /* Colore di sfondo di esempio */
+}
+
+.tab-active {
+  background-color: #007bff !important;
+  color: white !important;
 }
 
 .tab-headers button {
+  background-color: white;
   flex-grow: 1; /* Fa sì che i bottoni si espandano per occupare lo spazio disponibile */
-  padding: 10px 20px; /* Aumenta il padding per ingrandire i bottoni */
-  background-color: #e9e9e9; /* Colore di sfondo di esempio */
+  padding: 20px 40px; /* Aumenta il padding per ingrandire i bottoni */
+  border-radius: 30px; /* Rende i bordi dei bottoni ovali */
+  font-size: 1.5rem; /* Aumenta la dimensione del testo all'interno dei bottoni */
+  color: #000000; /* Imposta il colore del testo a nero */
+  font-weight: bold;
 }
 
 .tab-content {
@@ -139,19 +122,55 @@ body {
   justify-content: center; /* Centra i contenuti */
   align-items: stretch; /* Stira i contenitori per occupare tutta l'altezza disponibile */
   width: 100%; /* Occupa tutta la larghezza disponibile */
-  background-color: #e9e9e9; /* Colore di sfondo di esempio */
 }
 
 .tab-content div {
   flex-grow: 1; /* Fa sì che ogni div occupi una porzione equa dello spazio */
   margin: 5px; /* Aggiunge un po' di margine intorno a ogni div */
   padding: 10px; /* Aggiunge un po' di padding all'interno di ogni div */
-  background-color: #e9e9e9; /* Colore di sfondo di esempio */
   text-align: center; /* Centra il testo all'interno di ogni div */
 }
+
 .tab-element {
   display: flex;
   flex-direction: row; /* Corregge l'orientamento in orizzontale */
   justify-content: center; /* Centra i contenuti */
   align-items: stretch; /* Stira i contenitori per occupare tutta l'altezza disponibile */
+}
+
+.u-expanded-width {
+  border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
+  background-image: url("/images/Bronze.png");
+  width: 20%;
+}
+
+.u-expanded-width2 {
+  border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
+  background-image: url("/images/Silver.png");
+  width: 20%;
+}
+
+.u-expanded-width3 {
+  border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
+  background-image: url("/images/Gold.png");
+  width: 20%;
+}
+
+.u-image {
+  width: 20%;
+}
+
+/* Aggiunge una nuova classe per il testo "Tier" per ingrandire il font */
+.tier-text {
+  margin: 0; /* Rimuove il margine esterno */
+  padding: 10px 0; /* Aggiunge un po' di spazio interno sopra e sotto il testo, ajusta secondo necessità */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; /* Centra il testo se desiderato */
+}
+
+/* Sovrascrive o aggiunge al CSS esistente per l'immagine */
+.u-image.u-image-contain.u-image-default.u-image-49 {
+  width: 120px; /* Aumenta la larghezza dell'immagine */
+  height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
 }

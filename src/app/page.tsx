@@ -3,6 +3,7 @@ import "./globals.css";
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 import Header from '../app/components/Header';
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 function App() {
   const account = useAccount()
@@ -60,50 +61,101 @@ function App() {
               <div>{error?.message}</div>
             </div>
           </div>
-          <img src="url_della_tua_immagine.jpg" alt="Descrizione" className="main-photo" />
+          <img className="DeFiLogoPhoto" src="/images/1.PWRBALL.png" alt="Descrizione" />
         </div>
         <div>
         </div>
         {/* Altri componenti o contenuti possono seguire qui */}
         <div className="tab-headers">
-          <button onClick={() => changeTab(1)}>Tab 1</button>
-          <button onClick={() => changeTab(2)}>Tab 2</button>
-          <button onClick={() => changeTab(3)}>Tab 3</button>
+          <button className={activeTab === 1 ? 'tab-active' : ''} onClick={() => changeTab(1)}>BRONZE 20X</button>
+          <button className={activeTab === 2 ? 'tab-active' : ''} onClick={() => changeTab(2)}>SILVER 50X</button>
+          <button className={activeTab === 3 ? 'tab-active' : ''} onClick={() => changeTab(3)}>GOLD 100X</button>
         </div>
         <div className="tab-content">
           {activeTab === 1 && (
             // Contenuto per il Tab 1
-            <div className="tab-element">
-              <div>Contenitore 1 - Tab 1</div>
-              <div>Contenitore 2 - Tab 1</div>
-              <div>Contenitore 3 - Tab 1</div>
-              <div>Contenitore 4 - Tab 1</div>
-              <div>Contenitore 5 - Tab 1</div>
+            <div className="divisor">
+              <div className="tab-element">
+                <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier1.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier2.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier3.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier4.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier5.png" alt="" />
+                </div>
+                </div>
+              </div>
             </div>
           )}
           {activeTab === 2 && (
             // Contenuto per il Tab 2
-            <div className="tab-content">
-              <div>Contenitore 1 - Tab 2</div>
-              <div>Contenitore 2 - Tab 2</div>
-              <div>Contenitore 3 - Tab 2</div>
-              <div>Contenitore 4 - Tab 2</div>
-              <div>Contenitore 5 - Tab 2</div>
+            <div className="divisor">
+              <div className="tab-element">
+                <div className="u-expanded-width2 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier1.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width2 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier2.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width2 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier3.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width2 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier4.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width2 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier5.png" alt="" />
+                </div>
+                </div>
+              </div>
             </div>
           )}
           {activeTab === 3 && (
             // Contenuto per il Tab 3
             <div className="tab-content">
-              <div>Contenitore 1 - Tab 3</div>
-              <div>Contenitore 2 - Tab 3</div>
-              <div>Contenitore 3 - Tab 3</div>
-              <div>Contenitore 4 - Tab 3</div>
-              <div>Contenitore 5 - Tab 3</div>
+              <div className="tab-element">
+                <div className="u-expanded-width3 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier1.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width3 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier2.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width3 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier3.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width3 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier4.png" alt="" />
+                </div>
+                </div>
+                <div className="u-expanded-width3 u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
+                  <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier5.png" alt="" />
+                </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
         {/* Altri componenti o contenuti possono seguire qui */}
-      </div>
+      </div >
 
     </>
   )

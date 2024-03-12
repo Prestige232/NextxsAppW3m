@@ -1,14 +1,17 @@
 // components/Header.tsx
 import React from 'react';
-// Importing the CSS file
+import Image from 'next/image';
+
 
 const Header = () => {
     return (
         <div className="header">
-            <div className="logo">DeFi Lab</div>
+            <div className="logo">
+                <Image src="/images/DefAiLabsLogoMini.png" alt="DeFi Lab Logo" width={50} height={50} />
+            </div>
             <div className="navigation">
-                <button className="nav-button">Button 1</button>
-                <button className="nav-button">Button 2</button>
+                <button className="nav-button">Home</button>
+                <button className="nav-button">DAPP</button>
                 <div className="hamburger-menu">☰</div>
             </div>
         </div>
