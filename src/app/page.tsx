@@ -4,6 +4,12 @@ import { useAccount, useConnect, useDisconnect } from 'wagmi'
 import Header from '../app/components/Header';
 import { useEffect, useState } from "react";
 import Image from 'next/image';
+import { GridComponent, GridRow } from "./components/GridComponent";
+import { Ticket, Price } from "./components/TicketPrice";
+import WinnerBanner from "./components/WinnerBanner";
+import InstatPayout from "./components/InstatPayout";
+import CustomButton from "./components/CustomButton";
+import Aviability from "./components/Aviability";
 
 function App() {
   const account = useAccount()
@@ -19,7 +25,9 @@ function App() {
   useEffect(() => {
     setReady(true);
   }, []);
-
+  const handleClick = () => {
+    alert('Bottone cliccato!');
+  };
   return (
 
     <>
@@ -74,28 +82,149 @@ function App() {
         <div className="tab-content">
           {activeTab === 1 && (
             // Contenuto per il Tab 1
-            <div className="divisor">
-              <div className="tab-element">
+            <div className="tab-element">
+              <div className="tiercontainar">
                 <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
                   <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier1.png" alt="" />
                 </div>
                 </div>
+                <div>
+                  <Ticket>Ticket 100</Ticket>
+                  <Price>Price 0.01 ETH</Price>
+                </div>
+                <GridComponent>
+                  <GridRow>
+                    <div >1st</div>
+                    <div >20X/0.2 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >2nd</div>
+                    <div >10X/0.1 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >3rd</div>
+                    <div >5X/0.005 ETH</div>
+                  </GridRow>
+                </GridComponent>
+                <WinnerBanner text="50% of all tickets win cost of entry" />
+                <InstatPayout text="INSTANT PAYOUTS ON ALL PRIZES" />
+                <CustomButton className="custom-button-background" text="BUY TIER 1" onClick={handleClick} />
+                <Aviability text="100/100" />
+
+              </div>
+              <div className="tiercontainar">
                 <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
                   <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier2.png" alt="" />
                 </div>
                 </div>
+                <div>
+                  <Ticket>Ticket 100</Ticket>
+                  <Price>Price 0.05 ETH</Price>
+                </div>
+                <GridComponent>
+                  <GridRow>
+                    <div >1st</div>
+                    <div >20X/1 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >2nd</div>
+                    <div >10X/0.5 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >3rd</div>
+                    <div >5X/0.25 ETH</div>
+                  </GridRow>
+                </GridComponent>
+                <WinnerBanner text="50% of all tickets win cost of entry" />
+                <InstatPayout text="INSTANT PAYOUTS ON ALL PRIZES" />
+                <CustomButton className="custom-button-background" text="BUY TIER 2" onClick={handleClick} />
+                <Aviability text="100/100" />
+
+              </div>
+              <div className="tiercontainar">
                 <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
                   <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier3.png" alt="" />
                 </div>
                 </div>
+                <div>
+                  <Ticket>Ticket 100</Ticket>
+                  <Price>Price 0.1 ETH</Price>
+                </div>
+                <GridComponent>
+                  <GridRow>
+                    <div >1st</div>
+                    <div >20X/2 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >2nd</div>
+                    <div >10X/1 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >3rd</div>
+                    <div >5X/0.5 ETH</div>
+                  </GridRow>
+                </GridComponent>
+                <WinnerBanner text="50% of all tickets win cost of entry" />
+                <InstatPayout text="INSTANT PAYOUTS ON ALL PRIZES" />
+                <CustomButton className="custom-button-background" text="BUY TIER 3" onClick={handleClick} />
+                <Aviability text="100/100" />
+
+              </div>
+              <div className="tiercontainar">
                 <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
                   <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier4.png" alt="" />
                 </div>
                 </div>
+                <div>
+                  <Ticket>Ticket 100</Ticket>
+                  <Price>Price 0.5 ETH</Price>
+                </div>
+                <GridComponent>
+                  <GridRow>
+                    <div>1st</div>
+                    <div >20X/10 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >2nd</div>
+                    <div >10X/5 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >3rd</div>
+                    <div >5X/2.5 ETH</div>
+                  </GridRow>
+                </GridComponent>
+                <WinnerBanner text="50% of all tickets win cost of entry" />
+                <InstatPayout text="INSTANT PAYOUTS ON ALL PRIZES" />
+                <CustomButton className="custom-button-background" text="BUY TIER 4" onClick={handleClick} />
+                <Aviability text="100/100" />
+              </div>
+              <div className="tiercontainar">
                 <div className="u-expanded-width u-image u-image-round u-radius u-image-48 tier-text" >Tier<div>
                   <img className="u-image u-image-contain u-image-default u-image-49" src="images/Tier5.png" alt="" />
                 </div>
                 </div>
+                <div>
+                  <Ticket>Ticket 100</Ticket>
+                  <Price>Price 1 ETH</Price>
+                </div>
+                <GridComponent>
+                  <GridRow>
+                    <div >1st</div>
+                    <div >20X/20 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >2nd</div>
+                    <div >10X/10 ETH</div>
+                  </GridRow>
+                  <GridRow>
+                    <div >3rd</div>
+                    <div >5X/5 ETH</div>
+                  </GridRow>
+                </GridComponent>
+                <WinnerBanner text="50% of all tickets win cost of entry" />
+                <InstatPayout text="INSTANT PAYOUTS ON ALL PRIZES" />
+                <CustomButton className="custom-button-background" text="BUY TIER 5" onClick={handleClick} />
+                <Aviability text="100/100" />
               </div>
             </div>
           )}

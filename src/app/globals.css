@@ -132,32 +132,35 @@
 }
 
 .tab-element {
+  margin: 50px;
   display: flex;
   flex-direction: row; /* Corregge l'orientamento in orizzontale */
   justify-content: center; /* Centra i contenuti */
-  align-items: stretch; /* Stira i contenitori per occupare tutta l'altezza disponibile */
 }
 
 .u-expanded-width {
   border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
   background-image: url("/images/Bronze.png");
-  width: 20%;
+  width: 100%;
 }
 
 .u-expanded-width2 {
   border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
   background-image: url("/images/Silver.png");
-  width: 20%;
+  width: 100%;
+}
+
+.tiercontainar {
+  display: flex;
+  justify-content: space-around; /* o un'altra proprietà che si adatta al tuo layout */
+  gap: 10px; /* Aggiunge spazio tra gli elementi */
+  flex-direction: column; /* Corregge l'orientamento in orizzontale */
 }
 
 .u-expanded-width3 {
   border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
   background-image: url("/images/Gold.png");
-  width: 20%;
-}
-
-.u-image {
-  width: 20%;
+  width: 100%;
 }
 
 /* Aggiunge una nuova classe per il testo "Tier" per ingrandire il font */
@@ -173,4 +176,11 @@
 .u-image.u-image-contain.u-image-default.u-image-49 {
   width: 120px; /* Aumenta la larghezza dell'immagine */
   height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
+}
+
+.custom-button-background {
+  background-image: url("/images/Bronze.png"); /* Sostituisci con il percorso corretto dell'immagine */
+  background-size: cover; /* Copre l'intera area del bottone */
+  background-position: center; /* Centra l'immagine di sfondo */
+  color: white; /* Cambia il colore del testo se necessario */
 }
