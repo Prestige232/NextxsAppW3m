@@ -1,0 +1,15 @@
+.ticket,
+.price {
+  display: block;
+  color: white;
+  margin-right: 50px; /* Ajusta este valor para controlar el espacio entre los elementos */
+  margin: 20px;
+}
+
+.ticket {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+}

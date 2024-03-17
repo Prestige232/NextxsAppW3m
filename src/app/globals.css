@@ -97,7 +97,8 @@
   display: flex;
   justify-content: center; /* Centra i bottoni dei tab orizzontalmente */
   flex-wrap: wrap; /* Permette ai bottoni di andare a capo se non c'è spazio */
-  width: 100%; /* Imposta la larghezza al 75% del contenitore padre */
+  width: 90%; /* Imposta la larghezza al 75% del contenitore padre */
+  margin: 20px;
 }
 
 .tab-active {
@@ -121,21 +122,21 @@
   flex-direction: row; /* Corregge l'orientamento in orizzontale */
   justify-content: center; /* Centra i contenuti */
   align-items: stretch; /* Stira i contenitori per occupare tutta l'altezza disponibile */
-  width: 100%; /* Occupa tutta la larghezza disponibile */
+  width: 90%; /* Occupa tutta la larghezza disponibile */
 }
 
 .tab-content div {
   flex-grow: 1; /* Fa sì che ogni div occupi una porzione equa dello spazio */
-  margin: 5px; /* Aggiunge un po' di margine intorno a ogni div */
-  padding: 10px; /* Aggiunge un po' di padding all'interno di ogni div */
+  margin: 0; /* Aggiunge un po' di margine intorno a ogni div */
   text-align: center; /* Centra il testo all'interno di ogni div */
 }
 
 .tab-element {
-  margin: 50px;
+  margin: 150px;
   display: flex;
   flex-direction: row; /* Corregge l'orientamento in orizzontale */
   justify-content: center; /* Centra i contenuti */
+  gap: 10px;
 }
 
 .u-expanded-width {
@@ -151,25 +152,21 @@
 }
 
 .tiercontainar {
-  display: flex;
-  justify-content: space-around; /* o un'altra proprietà che si adatta al tuo layout */
-  gap: 10px; /* Aggiunge spazio tra gli elementi */
   flex-direction: column; /* Corregge l'orientamento in orizzontale */
+  border: 2px solid white; /* Aggiunge un bordo solido bianco */
+  border-radius: 20px; /* Opzionale: aggiunge bordi arrotondati al container */
+  width: 80%; /* Riduce la larghezza al 80% del suo contenitore padre */
+  max-width: 300px; /* Imposta una larghezza massima di 300px */
+  height: auto; /* Imposta l'altezza automaticamente in base al contenuto */
+  max-height: 500px; /* Opzionale: imposta un'altezza massima */
+  margin: 15px; /* Centra il container se è minore della larghezza massima */
+  gap: 10px; /* Aggiunge spazio tra gli elementi figli */
 }
 
 .u-expanded-width3 {
   border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
   background-image: url("/images/Gold.png");
   width: 100%;
-}
-
-/* Aggiunge una nuova classe per il testo "Tier" per ingrandire il font */
-.tier-text {
-  margin: 0; /* Rimuove il margine esterno */
-  padding: 10px 0; /* Aggiunge un po' di spazio interno sopra e sotto il testo, ajusta secondo necessità */
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center; /* Centra il testo se desiderato */
 }
 
 /* Sovrascrive o aggiunge al CSS esistente per l'immagine */

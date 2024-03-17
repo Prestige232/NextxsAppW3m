@@ -1,5 +1,6 @@
 // CustomButton.tsx
 import React from 'react';
+import "./CustomButton.css"
 
 interface CustomButtonProps {
   text: string;

@@ -1,0 +1,35 @@
+.aviability {
+  border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
+  background-image: url("/images/Bronze.png");
+  width: 100%;
+  height: auto; /* Assicura che l'altezza si adatti al contenuto, puoi regolarla come necessario */
+  margin: auto; /* Centra l'elemento nel suo container, se desiderato */
+  display: block; /* Assicura che l'elemento occupi la propria "riga", utile se non è già un blocco */
+  padding: 10px 0; /* Aggiunge del padding verticale per evitare che il testo tocchi i bordi */
+  margin: 0 auto; /* Centra orizzontalmente l'elemento */
+  display: block; /* Assicurati che l'elemento sia un blocco per funzionare con margini auto */
+}
+
+.aviability-silver {
+  border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
+  background-image: url("/images/silver.png");
+  width: 100%;
+  height: auto; /* Assicura che l'altezza si adatti al contenuto, puoi regolarla come necessario */
+  margin: auto; /* Centra l'elemento nel suo container, se desiderato */
+  display: block; /* Assicura che l'elemento occupi la propria "riga", utile se non è già un blocco */
+  padding: 10px 0; /* Aggiunge del padding verticale per evitare che il testo tocchi i bordi */
+  margin: 0 auto; /* Centra orizzontalmente l'elemento */
+  display: block; /* Assicurati che l'elemento sia un blocco per funzionare con margini auto */
+}
+
+.aviability-gold {
+  border-radius: 20px; /* Crea bordi arrotondati per l'effetto ovale */
+  background-image: url("/images/gold.png");
+  width: 100%;
+  height: auto; /* Assicura che l'altezza si adatti al contenuto, puoi regolarla come necessario */
+  margin: auto; /* Centra l'elemento nel suo container, se desiderato */
+  display: block; /* Assicura che l'elemento occupi la propria "riga", utile se non è già un blocco */
+  padding: 10px 0; /* Aggiunge del padding verticale per evitare che il testo tocchi i bordi */
+  margin: 0 auto; /* Centra orizzontalmente l'elemento */
+  display: block; /* Assicurati che l'elemento sia un blocco per funzionare con margini auto */
+}

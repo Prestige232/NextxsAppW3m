@@ -1,0 +1,57 @@
+/* Footer.css */
+.u-footer {
+  text-align: center;
+  padding: 20px 0;
+  padding: 20px 0; /* Aggiustato per dare più spazio intorno al contenuto */
+  border-top: 2px solid white; /* Aggiunge un bordo bianco spesso 2px */
+  width: 100vw; /* Assicura che il footer si estenda per tutta la larghezza della vista */
+  margin-top: 50px; /* Aggiunge margine superiore per distanziare il footer dagli elementi sopra */
+}
+
+.u-sheet-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Imposta la direzione dei flex items in orizzontale */
+  flex-wrap: wrap; /* Permette agli elementi di andare a capo se necessario */
+  gap: 20px; /* Aumenta la distanza tra gli elementi */
+}
+
+/* Rimuoviamo .u-list-1 dal contesto flex, dato che il suo parent .u-sheet-1 gestisce già il layout flex */
+
+.u-repeater-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Aumenta la distanza tra gli elementi */
+  width: 100%; /* Assicura che il container usi tutta la larghezza disponibile */
+}
+
+.u-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 10px;
+  flex-grow: 1; /* Permette agli elementi di crescere per riempire lo spazio disponibile, se necessario */
+  max-width: 120px; /* Imposta una larghezza massima per controllare la dimensione degli elementi */
+  padding: 10px; /* Aggiunge un po' di spazio interno */
+}
+
+.u-icon,
+.u-icon img {
+  width: 50%; /* Consente alle immagini di adattarsi al contenitore .u-icon */
+  max-width: 100%; /* Impedisce alle immagini di superare la larghezza del loro contenitore */
+  height: auto; /* Mantiene il rapporto d'aspetto delle immagini */
+}
+
+.u-footer img {
+  border: 2px solid white; /* Applica un bordo bianco di 2px attorno alle immagini */
+  padding: 5px; /* Opzionale: aggiunge spazio tra il bordo dell'immagine e il suo contenuto */
+  background-color: white; /* Assicura che lo sfondo intorno all'immagine sia bianco */
+  border-radius: 20px;
+  gap: 1.5rem; /* Regola la distanza tra gli elementi */
+}
+
+/* Adegua la larghezza massima e il flex-grow in base alle tue esigenze specifiche per ottenere la dimensione desiderata degli elementi */
