@@ -1,0 +1,41 @@
+.header {
+  justify-content: center;
+  background-image: url("/images/6a22c367954e797a1b37063c81a150fa2c91ae559f2ca48447c3f2b7fb8fa06f085f12fed03b63266528f4bf8faa2cc32a50d9fac8f7ab26dd6e96_1280.jpg");
+  background-size: cover; /* Assicura che l'immagine copra completamente l'header */
+  background-position: center; /* Centra l'immagine di sfondo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 75%;
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 20px;
+  z-index: 1000;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.header .logo {
+  margin-left: 1rem; /* Aggiunge margine a sinistra */
+  flex-grow: 0;
+}
+
+.header .navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem; /* Aggiunge margine a destra */
+}
+
+.nav-button,
+.hamburger-menu {
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}

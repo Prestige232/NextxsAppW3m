@@ -1,16 +1,16 @@
 'use client'
-import "./globals.css";
+import "../globals.css";
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
-import Header from '../app/components/Header';
+import Header from '../components/Header';
 import { useEffect, useState } from "react";
 import Image from 'next/image';
-import { GridComponent, GridRow } from "./components/GridComponent";
-import { Ticket, Price } from "./components/TicketPrice";
-import WinnerBanner from "./components/WinnerBanner";
-import InstatPayout from "./components/InstatPayout";
-import CustomButton from "./components/CustomButton";
-import Aviability from "./components/Aviability";
-import Footer from "./components/Footer";
+import { GridComponent, GridRow } from "../components/GridComponent";
+import { Ticket, Price } from "../components/TicketPrice";
+import WinnerBanner from "../components/WinnerBanner";
+import InstatPayout from "../components/InstatPayout";
+import CustomButton from "../components/CustomButton";
+import Aviability from "../components/Aviability";
+import Footer from "../components/Footer";
 
 function App() {
   const account = useAccount()
